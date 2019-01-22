@@ -1,0 +1,30 @@
+{
+    "name": "phpfacile/booking-quota",
+    "description": "Dummy implementation of services to manage quota limits (of booking).",
+    "keywords": ["quota"],
+    "homepage": "https://github.com/phpfacile/booking-quota",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP Facile!",
+            "homepage": "https://www.phpfacile.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "cs-check": "phpcs -s src",
+        "cs-check-psr": "phpcs -s --standard=PSR1,PSR2 src",
+        "cs-check-pear": "phpcs -s --standard=PEAR src",
+        "cs-fix": "phpcbf src"
+    },
+    "autoload": {
+        "psr-4": {
+          "PHPFacile\\Booking\\Quota\\Service\\": "src/"
+        }
+    }
+}
